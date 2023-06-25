@@ -6,7 +6,6 @@ else
 	CXXFLAGS += -O3 -DNDEBUG
 endif
 OBJS = $(patsubst %.cc,%.o,$(shell ls src/*.cc))
-#OBJS += $(patsubst %.cc,%.o,$(shell ls src/proto/*.cc))
 
 TARGET = third_party_test
 CXXLDFLAGS = -Lthird_party/3rdlib \
